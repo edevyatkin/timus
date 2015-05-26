@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-// wip
-
 public class Problem1209 {
 	
 	public static void main(String[] args) {
@@ -11,15 +9,17 @@ public class Problem1209 {
 		
 		while (num > 0) {
 			int x = sc.nextInt();
-			if (1+4*(x-1) == x*x) {
-				result.append(1);
-			}
-			else result.append(0);
+			int i = 1;
+			while (x > 1) x-= i++;
+			if (x == 1) 
+					result.append(1); 
+				else 
+					result.append(0);
 			result.append(" ");
 			num--;
 		}
 		
-		System.out.println(result);
+		System.out.println(result.substring(0, result.length()-1));
 		sc.close();
 
 	}
