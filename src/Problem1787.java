@@ -7,15 +7,15 @@ public class Problem1787 {
 		int k = sc.nextInt();
 		int n = sc.nextInt();
 		
-		int ptraffic = k * n;
-		int rtraffic = 0;
+		int jam = 0;
 		while (n > 0) {
 			int cars = sc.nextInt();
-			rtraffic += cars;
+			cars += jam;
+			jam = (cars - k > 0) ? cars - k: 0;
 			n--;
 		}
 		sc.close();
-		System.out.println(rtraffic - ptraffic);
+		System.out.println(jam);
 	}
 
 }

@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Problem2002 {
@@ -10,7 +11,7 @@ public class Problem2002 {
 		sc.nextLine();
 		
 		HashMap<String, String> users = new HashMap<>();
-		boolean isLoggedIn = false;
+		HashSet<String> loggedusers = new HashSet<>();
 		
 		while (num > 0 && sc.hasNextLine()) {
 			String str = sc.nextLine();
@@ -29,10 +30,10 @@ public class Problem2002 {
 					System.out.println("fail: no such user");
 				else if (!parts[2].equals(users.get(parts[1])))
 						System.out.println("fail: incorrect password");
-				else if (isLoggedIn == true)
+				else if (loggedusers.contains(parts[1]))
 						System.out.println("fail: already logged in");
 				else {
-					isLoggedIn = true;
+					loggedusers.add(parts[1]);
 					System.out.println("success: user logged in");
 				}
 
@@ -40,10 +41,10 @@ public class Problem2002 {
 			case "logout":
 				if(!users.containsKey(parts[1]))
 					System.out.println("fail: no such user");
-				else if (isLoggedIn == false)
+				else if (!loggedusers.contains(parts[1]))
 					System.out.println("fail: already logged out");	
 				else {
-					isLoggedIn = false;
+					loggedusers.remove(parts[1]);
 					System.out.println("success: user logged out"); 
 				}
 				break;	
