@@ -1,4 +1,10 @@
+package com.edevyatkin.timus;
+
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1820
+ */
 
 public class Problem1820 {
 
@@ -16,7 +22,6 @@ public class Problem1820 {
 			System.out.println(res);
 		}
 		else System.out.println(2);
-		
 	}
 
 }

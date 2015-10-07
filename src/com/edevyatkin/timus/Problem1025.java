@@ -1,4 +1,10 @@
+package com.edevyatkin.timus;
+
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1025
+ */
 
 public class Problem1025 {
 	
@@ -27,20 +33,6 @@ public class Problem1025 {
 		}
 		
 		System.out.println(count);
-		
-//		ArrayList<Integer> list = new ArrayList<>();
-//		while (sc.hasNext()) {
-//			list.add(sc.nextInt());
-//		}
-//		
-//		list.sort((a,b) -> (a < b) ? -1: 1);
-//		
-//		for (Integer integer : list) {
-//			
-//		}
-//		
-//		
-//		System.out.println(list);
 	}
 
 }

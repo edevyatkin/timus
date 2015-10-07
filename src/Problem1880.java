@@ -32,7 +32,7 @@ public class Problem1880 {
 		coll1.retainAll(coll2);
 		coll1.retainAll(coll3);
 
-		System.out.println(coll1.stream().count());
+		System.out.println(coll1.size());
 	}
 
 }

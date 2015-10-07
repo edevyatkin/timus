@@ -1,6 +1,12 @@
+package com.edevyatkin.timus;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=2002
+ */
 
 public class Problem2002 {
 	

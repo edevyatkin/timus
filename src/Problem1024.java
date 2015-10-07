@@ -1,6 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1024
+ */
+
 public class Problem1024 {
 	
 	public static void main(String[] args) {

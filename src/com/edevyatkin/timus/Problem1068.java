@@ -1,4 +1,10 @@
+package com.edevyatkin.timus;
+
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1068
+ */
 
 public class Problem1068 {
 	
@@ -12,7 +18,7 @@ public class Problem1068 {
 		if (n > 0)
 			sum = n*(n+1)/2;
 		else
-			sum = (-n*(-n+1)/2-1)*-1;
+			sum = n*(-n+1)/2+1;
 		
 		System.out.println(sum);
 	}

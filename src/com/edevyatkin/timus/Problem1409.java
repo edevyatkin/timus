@@ -1,4 +1,10 @@
+package com.edevyatkin.timus;
+
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1409
+ */
 
 public class Problem1409 {
 	

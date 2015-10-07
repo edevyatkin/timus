@@ -1,4 +1,10 @@
+package com.edevyatkin.timus;
+
 import java.util.Scanner;
+
+/*
+ * http://acm.timus.ru/problem.aspx?space=1&num=1083
+ */
 
 public class Problem1083 {
 	
@@ -9,7 +15,7 @@ public class Problem1083 {
 		
 		String[] parts = str.split(" ");
 		
-		int number = Integer.valueOf(parts[0]);
+		int number = Integer.parseInt(parts[0]);
 		int factorials = parts[1].length();
 		int result = 1;
 		
@@ -19,7 +25,6 @@ public class Problem1083 {
 		}
 		
 		System.out.println(result);
-		
 	}
 
 }
