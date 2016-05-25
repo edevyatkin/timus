@@ -1,5 +1,3 @@
-package com.edevyatkin.timus;
-
 import java.util.Arrays;
 import java.util.Scanner;
 

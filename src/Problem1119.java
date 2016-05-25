@@ -1,5 +1,3 @@
-package com.edevyatkin.timus;
-
 import java.util.Scanner;
 
 public class Problem1119 {

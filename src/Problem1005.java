@@ -1,5 +1,3 @@
-package com.edevyatkin.timus;
-
 import java.util.Scanner;
 
 /*
@@ -20,15 +18,15 @@ public class Problem1005 {
 
 		sc.close();
 
-		System.out.println(minweight(0, weights, 0, 0));
+		System.out.println(minweight(weights, 0, 0, 0));
 	}
 
-	private static int minweight(int x, int[] stones, int heap1, int heap2) {
+	private static int minweight(int[] stones, int x, int heap1, int heap2) {
 		if (x == stones.length) {
 			return Math.abs(heap1 - heap2);
 		}
-		return Math.min(minweight(x + 1, stones, heap1 + stones[x], heap2),
-				minweight(x + 1, stones, heap1, heap2 + stones[x]));
+		return Math.min(minweight(stones, x + 1, heap1 + stones[x], heap2),
+				minweight(stones, x + 1, heap1, heap2 + stones[x]));
 	}
 
 }
